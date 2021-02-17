@@ -86,7 +86,7 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>For anyone interested in getting more information or in purchasing the property, please get in touch.</p>
-							<form name="contact" netlify>
+							<form name="contact" data-netlify-recaptcha="true" netlify>
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -100,10 +100,7 @@
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
-									<div class="field">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">Not a robot</label>
-									</div>
+									<div data-netlify-recaptcha="true"></div>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" class="primary" /></li>
